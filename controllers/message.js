@@ -5,7 +5,7 @@ export default {
         try {
             let request = req.body;
             let msg = await Message.create(request);
-            return res.status(200).send({ status_code: 200, message: "SEO created successfully." });
+            return res.status(200).send({ status_code: 200, message: "Message sent successfully." });
         } catch (err) {
             return res.status(400).send({ message: "Something Went Wrong!" })
         }
