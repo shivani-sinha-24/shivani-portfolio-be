@@ -11,7 +11,7 @@ const messageSchema = new mongoose.Schema(
         subject:{
             type:String
         },
-        text:{
+        message:{
             type:String
         },
         timeofMsg:String
