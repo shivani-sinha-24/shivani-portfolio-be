@@ -1,7 +1,7 @@
-import Message from "../model/message";
+import Message from "../model/message.js";
 
 export default {
-    async sendMsg () {
+    async sendMsg (req,res) {
         try {
             let request = req.body;
             let msg = await Message.create(request);
